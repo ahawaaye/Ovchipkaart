@@ -9,6 +9,9 @@ public class main
 	ov.inchecken(20);
 	System.out.println(ov.ingechecked);
 	
+	PaalPort port = new PaalPort();
+	
+	
 	
 	
 	
