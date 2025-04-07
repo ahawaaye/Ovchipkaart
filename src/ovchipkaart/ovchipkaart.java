@@ -4,19 +4,23 @@ public class ovchipkaart
 {
     double saldo;
     boolean ingechecked;
+    boolean uitgechecked;
+    
 
-    public void inchecken(double instaptarief, double saldo)
+    public void inchecken(double instaptarief)
     {
-	this.saldo = saldo;  
+	this.saldo = saldo - instaptarief;
 	this.ingechecked = true;
-        
+
     }
-     
-    public void inchecken(int bedrag) {
-	if() {
-	    
-	}
+    
+    public ovchipkaart(double saldo)
+    {
+	this.saldo = saldo;
+	this.uitgechecked =false;
+	this.ingechecked = false;
 	
     }
+    
 
 }

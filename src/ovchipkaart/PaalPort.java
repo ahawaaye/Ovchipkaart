@@ -3,11 +3,16 @@ package ovchipkaart;
 public class PaalPort
 {
     int instaptarief;
+    Bestemming bestemming;
+    
 
-    public PaalPort(int instaptarief)
+
+    public PaalPort(int instaptarief, Bestemming bestemming)
     {
 	this.instaptarief = instaptarief;
-
+	this.bestemming = bestemming;
+	
+	
     }
 
     public void inchecken(ovchipkaart ov)
@@ -28,5 +33,6 @@ public class PaalPort
 	}
 
     }
+    
 
 }
