@@ -23,17 +23,10 @@ public class Bestemming
 	
 	System.out.println(Math.sqrt(c));
 	
-	
-	
-	
-	
-	
-	
-	
 	return Math.sqrt(c);
 	
     }
-    
+   
     
 
 }

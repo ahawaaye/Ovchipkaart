@@ -7,9 +7,9 @@ public class ovchipkaart
     boolean uitgechecked;
     
 
-    public void inchecken(double instaptarief)
+    public void inchecken(double instaptarief, Bestemming bestemming)
     {
-	this.saldo = saldo - instaptarief;
+	this.saldo = this.saldo - instaptarief;
 	this.ingechecked = true;
 
     }
@@ -21,6 +21,13 @@ public class ovchipkaart
 	this.ingechecked = false;
 	
     }
+    public void uitchecken(double instaptarief, double ritprijs) {
+	this.uitgechecked = false;
+	this.saldo = this.saldo + instaptarief;
+	this.saldo = this.saldo - ritprijs;
+	
+    }
+    
     
 
 }

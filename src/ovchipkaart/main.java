@@ -12,14 +12,13 @@ public class main
 
 	A.BerekenAfstand(N);
 	
-	PaalPort port = new PaalPort(10,N);
+	
+	
+	PaalPort port = new PaalPort(10, N, 0);
 	port.inchecken(ov);
+	System.out.println("Huidig saldo: " + ov.saldo);
 	
 	System.out.println("Ingechecked: " + ov.ingechecked);
-
-	
-	
-	
 	
 	
     }
