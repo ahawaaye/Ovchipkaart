@@ -9,10 +9,8 @@ public class main
 	Bestemming A = new Bestemming("Arnhem", 5,9);
 	
 	
-
 	A.BerekenAfstand(N);
-	
-	
+
 	
 	PaalPort port = new PaalPort(10, N, 0);
 	port.inchecken(ov);
@@ -20,6 +18,10 @@ public class main
 	
 	System.out.println("Ingechecked: " + ov.ingechecked);
 	
+	oplaadAutomaat automaat = new oplaadAutomaat();
+	
+        automaat.LaadSaldo(ov, 10.00);
+        
 	
     }
 
